@@ -1,0 +1,124 @@
+@charset "UTF-8";
+body {margin: 0;
+	  text-align:center;} 
+	  
+/* header, footer */
+header, footer {
+	position: relative;
+	height: 170px;
+	width:100%;
+	background-color: buttonhighlight;
+}
+
+header h1 {
+	padding-top: 20px;
+	font-size : 50px;
+	margin: 0;
+	color : black;
+	text-align: center;
+}
+
+footer .footer_a:link { color: black; }
+
+.footer {
+	padding-top: 45px;
+	line-height: 26px;
+}
+
+.footer_logo {
+	font-weight: bolder;
+}
+
+.footer_a {
+	text-align: center;
+	font-size:  15px;
+}
+
+
+
+
+
+/* MAIN button */
+#header {
+	position: absolute;
+	top:0;
+	right: 0;	
+} 
+header .headerbutton{
+	  background:#4d4d4d;
+	  color:#fff;
+	  border:none;
+	  position:relative;
+	  height:33px;
+	  font-size:20px;
+	  padding:0 2em;
+	  cursor:pointer;
+	  outline:none;
+	  float: right;
+	  margin-top: 10px;
+	}
+header .headerbutton:hover{
+  background:buttonhighlight;
+  color:black;
+}
+header .headerbutton:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #4d4d4d;
+  transition:400ms ease all;
+}
+header .headerbutton:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+header .headerbutton:hover:before,.headerbutton:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+/* MAIN NAV */
+
+#topMenu {
+        height: 30px;
+        width: calc(100% - 100px);
+/*         padding: 0 50px; */
+		padding: 10px 50px 50px 50px;
+        }
+
+#topMenu ul { padding: 0;}
+
+#topMenu ul li {
+        list-style: none;
+        color: white;
+        background-color: #2d2d2d;
+        float: left;
+        line-height: 50px;
+        vertical-align: middle;
+        text-align: center;
+        width: calc((100% - 8px) / 5 );
+        height: 50px;
+}
+
+#topMenu .bar {
+	width: 2px;
+}
+
+#topMenu .menuLink {
+        text-decoration:none;
+        color: white;
+        display: block;
+        width: 100%;
+        font-size: 17px;
+        font-weight: bold;
+        font-family: "Trebuchet MS";
+}
+#topMenu .menuLink:hover {
+	    color: white;
+	    background-color: #4d4d4d;
+}
