@@ -2,6 +2,6 @@
 
 /* session */
 section {
-	min-height: 629px;
+	min-height: calc(100vh - 340px);
 }
 

@@ -18,7 +18,7 @@
 	
 	<!-- 본문 -->
 	<section>
-		<c:import url="/view/${page}" />
+		<c:import url="/view/${page}" />   <!-- 부분 페이지 -->
 	</section>
 	
  	<!-- Footer부분 -->

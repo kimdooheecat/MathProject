@@ -1,32 +1,29 @@
-package kr.gudi.web;
+package kr.gudi.web.controller;
 
-import java.util.ArrayList;
-import java.util.List;
+import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import kr.gudi.web.util.PageUtill;
+
 @Controller
 public class ViewController {
 	
-	private List<String> viewList = null; 
-	
-	public ViewController() {
-		// 화면 페이지 관리 > 나중에 DB 또는 공통 모듈 처리
-		viewList = new ArrayList<String>(); 
-		viewList.add("main");
-		viewList.add("login");
-		viewList.add("join");
-	}
+	@Autowired private PageUtill pu;
 	
 	@GetMapping("/")
-	public String base() {return "redirect:/Main";}
+	public String base(HttpServletRequest req) {
+		pu.getPage(req);
+		return "redirect:/Main";
+	}
 	
 	@GetMapping("/{view}")
-	public String view(@PathVariable("view") String view, Model model) {
-		if(checkView(view.toLowerCase())) {
+	public String view(@PathVariable("view") String view, Model model, HttpServletRequest req) {
+		if(pu.checkView(view, req)) {
 			return "redirect:/Main";
 		}
 		model.addAttribute("title", view.toUpperCase());
@@ -45,14 +42,5 @@ public class ViewController {
 		return "page/" + page;
 	}
 	
-	public boolean checkView(String view) {
-		boolean check = true;
-		for(String page : viewList) {
-			if(page.equals(view)) {
-				check = false;
-				break;
-			}
-		}
-		return check;
-	}
+	
 }

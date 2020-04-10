@@ -43,6 +43,17 @@
 						<option value=F>여성</option>
 					</select>
 				</li>
+				
+				<li><label>학년 선택</label><br></li>
+				<li>
+					<select name=grade id = "grade" required="required">
+						<option value=E>초등</option>
+						<option value=M>중등</option>
+						<option value=H>고등</option>
+						<option value=A>성인</option>
+					</select>
+				</li>
+				
 
 				<li><label>휴대전화</label><br></li>
 				<li><input id = "tel" type="tel" name="mb_number" placeholder="(-)을 제외한 번호를 입력하세요." title="number" onchange="ck()" required="required">

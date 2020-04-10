@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+.section {
+    box-sizing: border-box;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    min-height: calc(100vh - 340px);
+}
+
+.boxone {
+	border: 1.5px solid #4d4d4d;
+    width: 40%;
+    height: 50px;
+    display: inline-block;
+}
+
+.boxone_font1 {
+	font-size: 15px;
+    text-align: center;
+    font-family: 돋움체;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.font2 
+{
+	font-size: 30px;
+    text-align: left;
+    font-family: 돋움체;
+    font-weight: bold;
+    line-height: 50px;
+    display: block;
+}
+
+/* 문제 유형 선택 박스  */
+.class {padding: 0;}
+
+.class,li {list-style: none; box-sizing: border-box;  }
+
+/* .title li, #body ul{ */
+/* 	float: left; width: calc(100% / 4); text-align: center; padding-left: 0; */
+	
+/* } */
+
+
+.title li, #body ul{
+	float: left; width: calc(100% / 4); text-align: center; padding-left: 0;
+	
+}
+
+#body ul{
+	float: left; width: calc((100% - 40px) / 4); text-align: center; padding-left: 10px;
+	
+}
+
+
+.title li {background-color: gray; font-weight: bold; padding: 20px 0;}
+#body ul {height: 200px; }
+#body li {text-align: left; padding: 5px 0; }
+#body li:hover {
+	background-color: black; cursor: pointer;
+}
+
+/* 문제풀기 버튼 */
+
+button {
+	padding: 0.7rem 0;
+	width: 120px; 
+	box-sizing: border-box; 
+	background-color: #2d2d2d;
+	font-size: 1rem;
+	border-radius: 3px;
+	margin-top: 1rem;
+	border: 0;
+	cursor: pointer;	
+	color: white;
+	float: right;
+}
+
+button:hover {
+	color: white;
+	background-color: #4d4d4d;
+}
+
+
+
+
+
+
+
+
+

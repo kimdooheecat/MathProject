@@ -4,10 +4,11 @@ body {margin: 0;
 	  
 /* header, footer */
 header, footer {
-	position: relative;
+/* 	position: relative; */
 	height: 170px;
 	width:100%;
 	background-color: buttonhighlight;
+	clear: both;
 }
 
 header h1 {
@@ -23,6 +24,7 @@ footer .footer_a:link { color: black; }
 .footer {
 	padding-top: 45px;
 	line-height: 26px;
+	
 }
 
 .footer_logo {
