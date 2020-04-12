@@ -13,7 +13,7 @@
 		</c:if>
 	</div>
 	<h1> ONLINE </h1>
-	<c:if test="${page == 'main'}">
+	<c:if test="${page == 'main' || page == 'problem'}">
 		<nav id="topMenu" >
 			<ul>
 				<li><a class="menuLink" href="#">HOME</a></li>

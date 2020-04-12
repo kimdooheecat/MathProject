@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+.header {
+	 min-height: calc(100vh - 340px);
+	 width : 80%;
+	 margin-left : auto;
+	 margin-right : auto;
+}
+
+.mathproblem {
+	list-style: none;
+    padding-left: 0px;
+    margin-top: 20px;
+/*     width: calc(100% / 2); */
+    font-size: 25px;
+}
+
+.math {
+/* 	width: calc(100% / 2); */
+    float: left;
+}
+
+.test {
+	width: 150px;
+    text-align: left;
+}
+
+/* 제출하기 다음 버튼 */
+.btn {
+    width: 200px;
+    height: 48px;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #2d2d2d;
+    border: 0;
+	cursor: pointer;
+	float: right;
+}
+.btn:hover{
+	color: white;
+	background-color: #4d4d4d;
+}
+
+
+.section {
+	padding-top: 100px;
+}
+
+.images {
+	width: 410px;
+	display: inline-block;
+}
+ 
+/*문제 답 체크*/
+.problemckeck {
+	border: 1.5px solid #4d4d4d;
+    width: 300px;
+    height: 170px;
+    display: inline-block;
+}
+
+
+p{
+  position:relative;  
+}
+
+input[type="checkbox"]{
+  width:1px; 
+  height:1px; 
+  padding:0; 
+  border:0 none; 
+  margin:0; 
+  position:absolute; 
+  left:0; 
+  top:0; 
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+}
+
+label{
+  height:15px; 
+  line-height:15px; 
+  padding-left:20px; 
+  display:inline-block; 
+  background:url(http://hcs1105.com/wp/wp-content/themes/hcs1105/images/checkbox1.png) no-repeat 0 0; 
+  font-size:15px; 
+  vertical-align:middle; 
+  cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label{
+  background-position: 0 -15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
