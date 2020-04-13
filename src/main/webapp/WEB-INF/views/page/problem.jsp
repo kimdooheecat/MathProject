@@ -15,10 +15,12 @@
 			</div>
 			
 			<a class = "font2" > 문제 선택 </a>
-			<div class = "session1"  >
+			
+			
+			<div class = "section1">
 			<div class = "title">
 				<ul class = "class">
-					<li> 과목 </li>
+					<li> 학년 </li>
 					<li> 대분류</li>
 					<li> 중분류</li>
 					<li> 난이도</li>
@@ -31,14 +33,31 @@
 					<li> 중등</li>
 					<li> 고등</li>
 				</ul>
-				<ul></ul>
-				<ul></ul>
-				<ul></ul>
+				
+				<ul> 
+					<li> 다항식</li>
+					<li> 방정식과 부등식</li>
+					<li> 도형의 방정식</li>
+					<li> 집합과 명제</li>
+					<li> 함수와 그래프</li>
+					<li> 경우의 수</li>
+				</ul>
+				
+				<ul>
+					<li> 다항식의 연산</li>
+					<li> 항등식과 나머지 정리</li>
+					<li> 인수 분해</li>
+				</ul>
+				<ul>
+					<li> 상</li>
+					<li> 중</li>
+					<li> 하</li>
+				</ul>
 			</div>
 			
 			</div>
 			
-			<button type="submit" id="save" >문제 풀기</button>
+			<button type="submit" id="save"   onclick="location.href='/mathproblem' ">문제 풀기</button>
 	</div>
 
 

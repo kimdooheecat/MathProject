@@ -34,10 +34,14 @@
     display: block;
 }
 
+.section1 {
+    border: 1.5px solid #4d4d4d;
+    height: 300px;}
+
 /* 문제 유형 선택 박스  */
 .class {padding: 0;}
 
-.class,li {list-style: none; box-sizing: border-box;  }
+.class,li {list-style: none; box-sizing: border-box;     margin: 0;  }
 
 /* .title li, #body ul{ */
 /* 	float: left; width: calc(100% / 4); text-align: center; padding-left: 0; */
@@ -60,7 +64,9 @@
 #body ul {height: 200px; }
 #body li {text-align: left; padding: 5px 0; }
 #body li:hover {
-	background-color: black; cursor: pointer;
+	background-color: #828080;
+    cursor: pointer;
+    color: white;
 }
 
 /* 문제풀기 버튼 */

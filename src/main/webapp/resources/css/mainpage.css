@@ -5,3 +5,12 @@ section {
 	min-height: calc(100vh - 340px);
 }
 
+.images {
+	background-image: url(/resources/images/main2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1100px;
+    height: 620px;
+    display: inline-block;
+    margin-top: 3.5px;
+}

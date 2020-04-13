@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/resources/css/join.css">
+<link rel="stylesheet" href="/resources/css/edit.css">
 </head>
 <body>
 <h1 class="student">회원 정보 수정</h1>
@@ -13,11 +13,11 @@
 			<ul> <!-- 학생 -->
 				<li><label for="name">이름 입력</label> <br></li>
 				<li><input id="name" type="text" name="mb_name"
-					placeholder="이름을 입력하세요." title="이름입력" required="required"><br></li>
+					placeholder="김도희" title="이름입력" readonly><br></li>
 			
 				<li><label for="id">아이디 입력</label> <br></li>
 				<li><input id="idcheck" type="text" name="mb_text"
-					placeholder="아이디를 입력하세요." title="아이디입력" required="required"> <br>
+					placeholder="kimdohee" title="아이디입력" readonly><br>
 				</li>	
 			
 				<li><label for="password">비밀번호 입력</label><br></li>
@@ -50,7 +50,7 @@
 				
 
 				<li><label>휴대전화</label><br></li>
-				<li><input id = "tel" type="tel" name="mb_number" placeholder="(-)을 제외한 번호를 입력하세요." title="number" onchange="ck()" required="required">
+				<li><input id = "tel" type="tel" name="mb_number" placeholder="01000000000" title="number" onchange="ck()" required="required">
 				</li>					
 				
 			</ul>

@@ -1,41 +1,151 @@
 @charset "UTF-8";
 
-.header {
+.body {
 	 min-height: calc(100vh - 340px);
-	 width : 80%;
+	 width: 70%;
 	 margin-left : auto;
 	 margin-right : auto;
+}
+
+.header {
+	margin-top: 15px;
+	border: 1.5px solid #4d4d4d;
+    width: 80%;
+    height: 50px;
+    display: inline-block;	
 }
 
 .mathproblem {
 	list-style: none;
     padding-left: 0px;
-    margin-top: 20px;
-/*     width: calc(100% / 2); */
     font-size: 25px;
+    margin: 0;
 }
 
-.math {
-/* 	width: calc(100% / 2); */
+.mathList {
+	margin-top: 5px;
+}
+
+.images {
+	width: 410px;
+    display: inline-block;
+    float: left;
+/*     margin-left: 200px; */
+}
+
+.section {
+	width : 50%;
+	height : 100%;
+	float: left;
+    padding-top: 30px;
+    /* display: inline-block; */
+    margin-left: 120px;
+	
+/* 	float: left; */
+/* 	padding-top: 30px; */
+/* 	display: inline-block; */
+}
+
+.answercheck {
+	height : 100%;
+	float : left;
+	padding-top : 30px;
+	padding-left : 120px;
+}
+
+.section p {
+	margin: 0;
+    text-align: center;
+/*     margin: 0 0 0 150px; */
+    font-size: 30px;
     float: left;
 }
 
-.test {
-	width: 150px;
-    text-align: left;
+
+.math {
+/* 	width: calc(100% / 2); */
+/*     float: left; */
+    text-align: right;
+    margin-top: 20px;
+    font-size: 20px;
 }
 
+/*문제 답 체크*/
+
+.form-radio-wrap {
+	margin-bottom: 7px;
+
+}
+
+.form-sub-title {
+	float: left;
+	margin: 0;
+/* 	margin-top: 3px; */
+    font-size: 18px;
+
+}
+
+.form-inline {
+	margin-right: 12.5px;
+	padding-left : 12.5px;
+	text-align : right;
+}
+
+.form-radio{
+	display: inline-block; 
+	line-height: 20px; 
+	vertical-align: middle;
+	font-size: 20px;
+/* 	margin-right: 20px; */
+	}
+.form-radio::before{
+	content: ""; 
+	display: inline-block; 
+	width: 10px; 
+	height: 10px; 
+	background: #ffffff; 
+	border: 1px solid #e0e0e0; 
+	margin-right: 8px;
+	}
+.form-radio::before{
+	border-radius: 50%;
+	}
+.input-radio{
+	display: none;
+	}
+.input-radio:checked + .form-radio::before{
+	background: #749fbb;
+	}
+.input-radio:checked + .form-radio{
+	color: #749fbb;
+	}
+	
+
+	
+	
+
 /* 제출하기 다음 버튼 */
+.button {
+	width : 30%;
+	height : 75px;
+	margin-left : auto;
+	margin-right : auto;
+	float: right;
+	
+}
+
+
 .btn {
-    width: 200px;
+    width: 100px;
     height: 48px;
     border-radius: 3px;
     font-size: 16px;
     color: #fff;
     background-color: #2d2d2d;
     border: 0;
-	cursor: pointer;
-	float: right;
+    cursor: pointer;
+    /* float: right; */
+    margin-top: 50px;
 }
 .btn:hover{
 	color: white;
@@ -43,55 +153,9 @@
 }
 
 
-.section {
-	padding-top: 100px;
-}
-
-.images {
-	width: 410px;
-	display: inline-block;
-}
- 
-/*문제 답 체크*/
-.problemckeck {
-	border: 1.5px solid #4d4d4d;
-    width: 300px;
-    height: 170px;
-    display: inline-block;
-}
 
 
-p{
-  position:relative;  
-}
 
-input[type="checkbox"]{
-  width:1px; 
-  height:1px; 
-  padding:0; 
-  border:0 none; 
-  margin:0; 
-  position:absolute; 
-  left:0; 
-  top:0; 
-  overflow:hidden;
-  clip:rect(0 0 0 0);
-}
-
-label{
-  height:15px; 
-  line-height:15px; 
-  padding-left:20px; 
-  display:inline-block; 
-  background:url(http://hcs1105.com/wp/wp-content/themes/hcs1105/images/checkbox1.png) no-repeat 0 0; 
-  font-size:15px; 
-  vertical-align:middle; 
-  cursor:pointer;
-}
-
-input[type="checkbox"]:checked + label{
-  background-position: 0 -15px;
-}
 
 
 

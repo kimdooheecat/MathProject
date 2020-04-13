@@ -6,23 +6,25 @@
 	<div id = "header">
 <!-- 		<button class = "headerbutton"> 학생로그인 </button> -->
 		<c:if test="${page == 'main' || page == 'join'}">
-			<button class = "headerbutton"> 로그인 </button>
+			<button class = "headerbutton" onclick="location.href='/login'"> 로그인 </button>
 		</c:if>
 		<c:if test="${page == 'main'}">
-			<button class = "headerbutton"> 회원가입 </button>
+			<button class = "headerbutton" onclick="location.href='/join'"> 회원가입 </button>
 		</c:if>
 	</div>
-	<h1> ONLINE </h1>
-	<c:if test="${page == 'main' || page == 'problem'}">
+	
+	<h1><a class = "logo" href ="/main"> ONLINE</a> </h1>
+	
+	<c:if test="${page == 'main' || page == 'problem' || page == 'mathproblem' || page == 'studentpage' || page == 'grade' }">
 		<nav id="topMenu" >
 			<ul>
-				<li><a class="menuLink" href="#">HOME</a></li>
+				<li><a class="menuLink" href="/main">HOME</a></li>
 				<li class = "bar">|</li>
-				<li><a class="menuLink" href="#">문제풀기</a></li>
+				<li><a class="menuLink" href="/problem">문제풀기</a></li>
 				<li class = "bar">|</li>
-				<li><a class="menuLink" href="#">마이페이지</a></li>
+				<li><a class="menuLink" href="/studentpage">마이페이지</a></li>
 				<li class = "bar">|</li>
-				<li><a class="menuLink" href="#">성적조회</a></li>
+				<li><a class="menuLink" href="/grade">성적조회</a></li>
 				<li class = "bar">|</li>
 				<li><a class="menuLink" href="#">Q & A</a></li>
 			</ul>

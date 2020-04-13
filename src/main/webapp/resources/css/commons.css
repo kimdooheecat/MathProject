@@ -19,6 +19,11 @@ header h1 {
 	text-align: center;
 }
 
+.logo {
+	text-decoration: none;
+	color : black;
+}
+
 footer .footer_a:link { color: black; }
 
 .footer {
@@ -34,6 +39,8 @@ footer .footer_a:link { color: black; }
 .footer_a {
 	text-align: center;
 	font-size:  15px;
+	text-decoration: none;
+	color : black;
 }
 
 

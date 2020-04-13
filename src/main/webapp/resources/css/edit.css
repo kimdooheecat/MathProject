@@ -1,0 +1,83 @@
+@charset "UTF-8";
+section {box-sizing: border-box;
+		 width : 30%;
+		 margin-left : auto;
+		 margin-right : auto;
+/* 		 padding-top: 52px; */
+		 min-height: calc(100vh - 340px);
+		}
+section:after {display: table; content:""; clear:both;}
+.t {width:calc(100%/2); font-size : 1.2rem; padding:10px 0; display:inline-block; float: left; text-align : center;}
+.active {background-color : gray;}
+section h1 {text-align : center;
+			font-size: 30px;
+			padding-top: 20px;
+			}
+			
+			
+.join { margin: 0 calc((100% - 500px) / 2);
+    	padding-bottom: 2.3rem;}
+ 
+section h3 {
+	font-size: 1rem;
+	margin: 1rem 0;
+}
+
+ul {padding: 0;}
+ul label {
+	font-size: 15px;
+	font-weight: bold;
+
+	
+}
+
+ul input {
+	width: 100%; 
+	box-sizing: border-box;
+	padding: 0.5rem;
+	margin-bottom: 0.3rem;
+	font-size: 11px;
+}
+
+ul input::-webkit-input-placeholder {
+	color: #000000;
+}
+
+section form ul li {
+	list-style:none;
+	margin-top: 0.7rem;
+	font-size: 0.7rem;
+	text-align: left;
+}
+
+ul li select {
+	width: 100%; 
+	box-sizing: border-box; 
+	padding: 0.5rem;
+	margin-bottom: 0.3rem;
+	font-size: 11.5px;
+}
+
+ul span {
+	font-size: 0.8rem;
+}
+
+section button {
+	padding: 0.7rem 0;
+	width: 100%; 
+	box-sizing: border-box; 
+	background-color: #2d2d2d;
+	font-size: 1rem;
+	border-radius: 3px;
+	margin-top: 1rem;
+	border: 0;
+	cursor: pointer;	
+	color: white;
+}
+
+section button:hover {
+	color: white;
+	background-color: #4d4d4d;
+}
+		
+.idpwd { padding: 0.5rem;}		

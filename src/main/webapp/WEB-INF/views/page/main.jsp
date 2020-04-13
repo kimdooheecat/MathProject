@@ -7,6 +7,11 @@
 <link rel="stylesheet" href="/resources/css/mainpage.css">
 </head>
 <body>
+	<div class = "section">
+	  <div class = "images">
+<!-- 	  	<img src="/resources/images/main2.jpg" > -->
+	  </div>  
+	</div>
 
 </body>
 </html>
