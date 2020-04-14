@@ -1,14 +1,67 @@
 @charset "UTF-8";
 
-section {
+.section {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin: 50px 0 121px;
-    min-height: calc(100vh - 511px);
+    margin: 20px 0 50px;
+    min-height: calc(100vh - 410px);
     display: inline-block;
 		}
-ul, li{ 
+h1 {
+	text-align: center;
+	font-size: 25px;
+}
+
+.graph1 {
+	display: inline-block;
+	margin: auto;
+	margin-top: 15px;
+}
+
+.graph2 {
+	border: 1.5px solid #4d4d4d;
+    width: 350px;
+    height: 350px;
+    float: left;
+    margin-left: 15px;
+/*     display: inline-block;	 */
+}
+
+table.type09 {
+    border-collapse: collapse;
+/*     text-align: left; */
+    line-height: 0.5;
+/*     display: inline-block; */
+	margin: auto;
+
+}
+table.type09 thead th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #000;
+    border-bottom: 3px solid #000;
+}
+table.type09 tbody th {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    background: #f3f6f7;
+}
+table.type09 td {
+    width: 350px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* 성적 분석 테이블 */
+
+.ul, li{ 
     list-style:none;
     text-align:center;
     padding:0;
@@ -21,18 +74,29 @@ ul, li{
 	margin: 0 auto; /*가운데 정렬*/
 }
 
-#mainWrapper > ul > li:first-child {
-	text-align: center;
-	font-size: 30px;
-	height:40px;
-	vertical-align:middle;
-	line-height:30px;
+/* #mainWrapper > ul > li:first-child { */
+/* 	text-align: center; */
+/* 	font-size: 30px; */
+/* 	height:40px; */
+/* 	vertical-align:middle; */
+/* 	line-height:30px; */
+/* } */
+
+/* #ulTable {margin-top:30px;} */
+
+.a {
+	text-decoration: none;
+	color : black;
 }
 
-#ulTable {margin-top:30px;}
 
+ul li .text {
+    /* font-size: 20px; */
+    font-size: 20px;
+    text-align: left;
+}
 
-#ulTable > li:first-child > ul > li {
+#ulTable > li .table {
 	background-color:#c9c9c9;
 	font-weight:bold;
 	text-align:center;
@@ -52,11 +116,12 @@ ul, li{
    	padding: 15px 0;
    }    
 
-#ulTable > li > ul > li:first-child           	{width:15%;} /*No 열 크기*/
-#ulTable > li > ul > li:first-child +li       	{width:50%;} /*제목 열 크기*/
-#ulTable > li > ul > li:first-child +li+li    	{width:20%;} /*작성일 열 크기*/
-#ulTable > li > ul > li:first-child +li+li+li 	{width:15%;} /*작성자 열 크기*/
-/* #ulTable > li > ul > li:first-child +li+li+li+li{width:10%;} 조회수 열 크기 */
+#ulTable > li > ul > li:first-child           		{width:10%;} /*No 열 크기*/
+#ulTable > li > ul > li:first-child +li       		{width:10%;} /*제목 열 크기*/
+#ulTable > li > ul > li:first-child +li+li    		{width:10%;} /*작성일 열 크기*/
+#ulTable > li > ul > li:first-child +li+li+li 		{width:35%;} /*작성자 열 크기*/
+#ulTable > li > ul > li:first-child +li+li+li+li	{width:25%;} /* 조회수 열 크기 */
+#ulTable > li > ul > li:first-child +li+li+li+li+li {width:10%;} /* 조회수 열 크기 */
 
 #divPaging {
 	padding-top: 44px;
@@ -82,8 +147,8 @@ ul, li{
 
 }
 
-.left {
-	text-align : left;
-}
+
+
+
 
 
