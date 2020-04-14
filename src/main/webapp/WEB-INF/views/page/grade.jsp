@@ -29,9 +29,9 @@
 					<li>
 						<ul>
 							<li>1</li>
-							<li class="left"><a class = "a" href = "/report" >다항식의 연산</a></li>
-							<li><a class = "a" href = "/report" >2020.04.09</a></li>
-							<li><a class = "a" href = "/report" >10/10</a></li>
+							<li class="left"><a class = "a" href = "/report2" >다항식의 연산</a></li>
+							<li><a class = "a" href = "/report2" >2020.04.09</a></li>
+							<li><a class = "a" href = "/report2" >10/10</a></li>
 <!-- 							<li>0</li> -->
 						</ul>
 					</li>

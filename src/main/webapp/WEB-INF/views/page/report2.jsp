@@ -5,6 +5,13 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="/resources/css/report.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/resources/js/report.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<!-- <script src="https://code.highcharts.com/modules/exporting.js"></script> -->
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
 </head>
 <body>
 	<div class = "section">
@@ -38,12 +45,17 @@
 		
 		<div class = "graph1">
 			<div class = "graph2">
-			<p> 영역별 분석 </p>
-  			</div>
-  			
-  			<div class = "graph2">
-			<p> 난이도별 득점 분포 </p>
-  			</div>
+<!-- 			<p> 영역별 분석 </p> -->
+			<figure class="highcharts-figure">
+  				<div id="container"></div>
+  					<p class="highcharts-description">
+  					</p>
+			</figure>
+			</div>
+			
+			<div class = "graph2">
+<!-- 			<p> 영역별 분석 </p> -->
+			</div>
 		</div>
 		
 		<div id="mainWrapper">

@@ -15,7 +15,7 @@
 	
 	<h1><a class = "logo" href ="/main"> ONLINE</a> </h1>
 	
-	<c:if test="${page == 'main' || page == 'problem' || page == 'mathproblem' || page == 'studentpage' || page == 'grade' }">
+	<c:if test="${page == 'main' || page == 'problem' || page == 'mathproblem' || page == 'studentpage' || page == 'grade' || page == 'report2' }">
 		<nav id="topMenu" >
 			<ul>
 				<li><a class="menuLink" href="/main">HOME</a></li>
