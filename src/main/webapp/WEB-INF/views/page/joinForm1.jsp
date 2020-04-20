@@ -4,17 +4,19 @@
 <head>
 <meta charset="UTF-8">
 <script>
-	$(document).ready(function(){
-		$("form").submit(function(e){
-			e.preventDefault();
-			alert("학생");
-		});
-	});
+// 	$(document).ready(function(){
+// 		$("form").submit(function(e){
+// 			e.preventDefault();
+// 			alert("학생");
+// 		});
+// 	});
 </script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<!-- <script src="/resources/js/join.js"></script> -->
 </head>
 <body>
 	<h1 class="student">학생 회원 가입</h1>
-	<form  method="post" id = "join1" >
+	<form  method="post" id = "join1">
 		<div class = "join">
 			<ul> <!-- 학생 -->
 				<li><label for="name">이름 입력</label> <br></li>

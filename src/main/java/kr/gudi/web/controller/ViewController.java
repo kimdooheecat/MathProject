@@ -17,7 +17,6 @@ public class ViewController {
 	
 	@GetMapping("/")
 	public String base(HttpServletRequest req) {
-		pu.getPage(req);
 		return "redirect:/Main";
 	}
 	

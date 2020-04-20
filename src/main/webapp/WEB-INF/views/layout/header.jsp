@@ -5,11 +5,17 @@
 <body>
 	<div id = "header">
 <!-- 		<button class = "headerbutton"> 학생로그인 </button> -->
-		<c:if test="${page == 'main' || page == 'join'}">
-			<button class = "headerbutton" onclick="location.href='/login'"> 로그인 </button>
+		<c:if  test="${User == null}">
+			<c:if test="${page == 'main' || page == 'join'}">
+				<button class = "headerbutton" onclick="location.href='/login'"> 로그인 </button>
+			</c:if>
+			<c:if test="${page == 'main'}">
+				<button class = "headerbutton" onclick="location.href='/join'"> 회원가입 </button>
+			</c:if>
 		</c:if>
-		<c:if test="${page == 'main'}">
-			<button class = "headerbutton" onclick="location.href='/join'"> 회원가입 </button>
+		<c:if  test="${User != null}">
+			<button class = "headerbutton" onclick="location.href='/login'"> 로그아웃 </button>
+			<button class = "headerbutton" onclick="location.href='/studentpage'"> ${User.s_name}님 </button>
 		</c:if>
 	</div>
 	

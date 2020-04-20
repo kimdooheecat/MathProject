@@ -7,6 +7,7 @@
 <title>join</title>
 <link rel="stylesheet" href="/resources/css/join.css">
 <script src="/resources/js/join.js"></script>
+
 </head>
 <body>
 	<div class="active t">학생 회원가입</div>
