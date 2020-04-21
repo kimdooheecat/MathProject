@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.view.RedirectView;
 
 import kr.gudi.web.bean.UserBean;
 import kr.gudi.web.service.login.LoginService;
@@ -17,6 +18,8 @@ public class LoginController {
 	
 	@Autowired private LoginService loginService;
 	
+	
+//	로그인
 	@RequestMapping (value = "/login", method = RequestMethod.POST)
 	public @ResponseBody boolean login(UserBean ub, HttpSession session) {
 		UserBean userBean = loginService.login(ub);
@@ -36,4 +39,16 @@ public class LoginController {
 //		return loginService.login(ub);
 //	}
 //	
+
+// 로그아웃 
+
+	@RequestMapping(value = "/logout", method = RequestMethod.GET)
+	public RedirectView removeUser(HttpSession session){
+		session.invalidate();
+		return new RedirectView("/login");
+	}
+	
+	
+	
+	
 }
