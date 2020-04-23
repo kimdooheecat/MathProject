@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="problem">
+
+<!-- 대분류-->
+<select id="typeLgroup" parameterType="Map"  resultType="Map">
+	SELECT ty_Lgroup FROM problem_type WHERE ty_grade = #{ty_grade} GROUP BY ty_Lgroup;
+</select>
+
+<!--중분류 -->
+<select id="typeMgroup" parameterType="Map"  resultType="Map">
+	SELECT ty_Mgroup FROM problem_type WHERE ty_Lgroup = #{ty_Lgroup} GROUP BY ty_Mgroup;
+</select>
+
+<!--난이도 -->
+<select id="typeLevel" parameterType="Map"  resultType="Map">
+	SELECT ty_level , ty_no FROM problem_type WHERE ty_Mgroup = #{ty_Mgroup} GROUP BY ty_level;
+</select>
+
+
+</mapper>
