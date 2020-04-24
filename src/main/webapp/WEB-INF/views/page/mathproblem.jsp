@@ -5,13 +5,17 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="/resources/css/mathproblem.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/resources/js/Problemtype.js"></script>
+<script src="/resources/js/mathproblem.js"></script>
 </head>
 <body>
 	<div class = "body">
 	
 		<div class = "header">
-			<ul class = "mathproblem">
-				<li class = "mathList"> 선택 유형 : 고등 >> 다항식 >> 다항식의 연산  >> 중 </li>
+			<ul class = "mathproblem" >
+<!-- 				<li class = "mathList"> 선택 유형 : 고등 >> 다항식 >> 다항식의 연산  >> 중 </li> -->
+				<li class = "mathList type"></li> 
 				<li class = "math"> 풀이 현황 0 / 10 </li>
 			</ul>
 		</div>

@@ -44,8 +44,8 @@
 			</div>
 			
 			</div>
-			
-			<button type="submit" id="save" onclick="location.href='/mathproblem'" class = "deps5">문제 풀기</button>
+<!-- 			 onclick="location.href='/mathproblem'" -->
+			<button type="submit" id="save"  class = "deps5">문제 풀기</button>
 	</div>
 
 

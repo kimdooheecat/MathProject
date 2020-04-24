@@ -2,20 +2,31 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="problem">
 
-<!-- 대분류-->
+<!-- 대분류 선택-->
 <select id="typeLgroup" parameterType="Map"  resultType="Map">
 	SELECT ty_Lgroup FROM problem_type WHERE ty_grade = #{ty_grade} GROUP BY ty_Lgroup;
 </select>
 
-<!--중분류 -->
+<!--중분류 선택 -->
 <select id="typeMgroup" parameterType="Map"  resultType="Map">
 	SELECT ty_Mgroup FROM problem_type WHERE ty_Lgroup = #{ty_Lgroup} GROUP BY ty_Mgroup;
 </select>
 
-<!--난이도 -->
+<!--난이도 선택-->
 <select id="typeLevel" parameterType="Map"  resultType="Map">
 	SELECT ty_level , ty_no FROM problem_type WHERE ty_Mgroup = #{ty_Mgroup} GROUP BY ty_level;
 </select>
 
+<!-- 문제선택 유형 -->
+<select id="type" parameterType="Map"  resultType="Map">
+	SELECT * FROM problem_type WHERE ty_no = #{ty_no}
+</select>
+
+
+
+<!--문제 가져오기 -->
+<!-- <select id="getproblem"> -->
+<!-- 	SELECT *  FROM problem WHERE p_delYN = 'N' AND ty_no = #{ty_no} AND p_img = #{p_img}; -->
+<!-- </select> -->
 
 </mapper>

@@ -67,10 +67,28 @@ $(document).ready(function(){
 					ty_no : $(this).attr("data-ty-no")
 			};
 			console.log(params);
-			
-			// 문제 화면 이동  problem_type의 번호로 
+			// 문제 화면 이동  problem_type의 번호로 	
+			$(".deps5").click(function(e){
+				console.log(".deps5");
+				location.href = "/mathproblem?ty_no=" + params.ty_no;	
+			});
+			type();
 		});
 	}
+	
+	
+// 문제풀기 화면 
+	var type = function(d){
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 });
 	
