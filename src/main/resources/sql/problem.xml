@@ -17,16 +17,24 @@
 	SELECT ty_level , ty_no FROM problem_type WHERE ty_Mgroup = #{ty_Mgroup} GROUP BY ty_level;
 </select>
 
-<!-- 문제선택 유형 -->
+<!-- 문제선택 유형 title -->
 <select id="type" parameterType="Map"  resultType="Map">
 	SELECT * FROM problem_type WHERE ty_no = #{ty_no}
 </select>
 
+<!-- 문제 가져오기 -->
+<select id="image" parameterType="Map" resultType="Map">
+	SELECT * FROM problem WHERE p_delYN = 'N'  AND ty_no = #{ty_no}
+</select>
 
-
-<!--문제 가져오기 -->
-<!-- <select id="getproblem"> -->
-<!-- 	SELECT *  FROM problem WHERE p_delYN = 'N' AND ty_no = #{ty_no} AND p_img = #{p_img}; -->
+<!-- 문제 답 가져오기 -->
+<!-- <select id="answer" parameterType="Map" resultType="Map"> -->
+<!-- 	SELECT * FROM problem WHERE p_delYN = 'N' AND p_answ = #{p_answ} AND ty_no = #{ty_no} AND p_img = #{p_img} -->
 <!-- </select> -->
+
+
+
+
+
 
 </mapper>

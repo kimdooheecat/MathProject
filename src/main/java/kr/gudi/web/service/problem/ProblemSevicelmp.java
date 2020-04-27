@@ -16,14 +16,21 @@ public class ProblemSevicelmp implements ProblemSevice {
 	@Autowired private ProblemDao problemdao;
 
 	@Override
-	public Map<String, Object> problemtype(Map<String, Object> params) {
+	public Map<String, Object> problem(Map<String, Object> params) {
 		Map<String, Object> ResultMap = new HashMap<String, Object>();
-	    ResultMap.put("tiele", problemdao.problemtype(params));
+	    ResultMap.put("tiele", problemdao.problem(params));
+	    
+	    params.put("ty_no", 100);
+	    ResultMap.put("image", problemdao.problemimage(params));
 //	    System.out.println(ResultMap);
 	    return ResultMap;
 	}
-	
-	
-	
+
+	@Override
+	public Map<String, Object> problemanswer(Map<String, Object> paramanswer) {
+		Map<String, Object> ResultMap = new HashMap<String, Object>();
+		ResultMap.put("answer", problemdao.problemanswer(paramanswer));
+		return ResultMap;
+	}
 
 }

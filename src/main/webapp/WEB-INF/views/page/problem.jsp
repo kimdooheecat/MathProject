@@ -36,7 +36,7 @@
 					<li> 고등</li>
 				</ul>
 				
-				<ul id="deps2"></ul>
+				<ul style = "overflow:auto;" id="deps2"></ul>
 				
 				<ul id="deps3"></ul>
 				

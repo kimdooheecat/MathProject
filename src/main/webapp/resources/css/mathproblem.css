@@ -46,6 +46,17 @@
 /* 	display: inline-block; */
 }
 
+/*************************** 문제 처리  ***************************************/
+.section > div:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+.disNone {
+	display: none;
+}
+/******************************************************************/
+
 .answercheck {
 	height : 100%;
 	float : left;

@@ -5,6 +5,7 @@ import java.util.Map;
 
 public interface ProblemSevice {
 	
-	public Map<String, Object> problemtype(Map<String, Object> params);
-
+	public Map<String, Object> problem(Map<String, Object> params);
+	
+	public Map<String, Object> problemanswer(Map<String, Object> paramanswer);
 }

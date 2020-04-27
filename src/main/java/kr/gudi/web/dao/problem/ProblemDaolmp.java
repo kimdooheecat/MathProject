@@ -13,11 +13,27 @@ public class ProblemDaolmp implements ProblemDao {
 	@Autowired SqlSession session;
 
 	@Override
-	public Map<String, Object> problemtype(Map<String, Object> params) {
+	public Map<String, Object> problem(Map<String, Object> params) {
 		System.out.println(params);
 		Map<String, Object> resultList = session.selectOne("problem.type", params);
 		System.out.println(resultList);
 		return resultList;
 	}
+
+	@Override
+	public List<Map<String, Object>> problemimage(Map<String, Object> paramimage) {
+		System.out.println(paramimage);
+		List<Map<String, Object>> imageList = session.selectList("problem.image" , paramimage );
+		System.out.println("imageDAO:" +  imageList.size());
+		return imageList;
+	}
+
+	@Override
+	public Map<String, Object> problemanswer(Map<String, Object> paramanswer) {
+		Map<String, Object> resultanswer = session.selectOne("problem.answer", paramanswer);
+		return null;
+	}
+	
+	
 
 }

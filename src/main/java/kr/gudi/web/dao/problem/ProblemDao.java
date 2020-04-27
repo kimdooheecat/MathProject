@@ -5,6 +5,10 @@ import java.util.Map;
 
 public interface ProblemDao {
 	
-	public Map<String, Object> problemtype(Map<String, Object> params);
+	public Map<String, Object> problem(Map<String, Object> params);
+	
+	public List<Map<String, Object>> problemimage(Map<String, Object> paramimage);
+	
+	public Map<String, Object> problemanswer(Map<String, Object> paramanswer);
 
 }
