@@ -30,7 +30,7 @@
 				<button type="button" class="btn" id="btn1" disabled>이전</button>
 				<button type="button" class="btn" id="btn2" disabled>다음</button>
 				<button type="submit" class="btn" id="btn3" >종료</button>
-<!-- 				<button type="submit" class="btn" id="btn3" >제출</button> -->
+				<button type="submit" class="btn" id="btn4" >제출</button>
 			</div>
 
 

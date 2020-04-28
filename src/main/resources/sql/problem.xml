@@ -32,6 +32,53 @@
 <!-- 	SELECT * FROM problem WHERE p_delYN = 'N' AND p_answ = #{p_answ} AND ty_no = #{ty_no} AND p_img = #{p_img} -->
 <!-- </select> -->
 
+<!-- 학생문제 답 저장  -->
+<insert id="studentanswer" parameterType="Map">
+	INSERT INTO answer_student 
+		(p_no, s_no, a_s_answer) 
+	VALUES 
+		(#{p_no}, #{s_no}, #{a_s_answer})
+</insert>
+
+<!-- 학생성적 가져오기 -->
+<!-- <select id="gradeList"> -->
+
+<!-- </select> -->
+
+<!-- 정답 유무 체크 -->
+<select id="answerYN">
+SELECT an.a_s_no , st.s_name,
+		 pt.ty_grade, pt.ty_Lgroup , pt.ty_Mgroup , pt.ty_level,
+		 an.a_s_answer AS '학생 답안' , pr.p_answ AS '모범 답안',
+		 case when an.a_s_answer = pr.p_answ then '정답'
+		 		ELSE '오답'
+			END AS '정답 유무'
+FROM answer_student AS an 			
+INNER JOIN student_user AS st
+ON (an.s_no = st.s_no)
+INNER JOIN problem AS pr
+ON (an.p_no = pr.p_no)
+INNER JOIN problem_type AS pt 
+ON (pr.ty_no = pt.ty_no)
+WHERE an.s_no = #{an.s_no}; 
+</select>
+
+<select id="answercount">
+SELECT an.a_s_no , st.s_name, DATE_FORMAT(an.a_s_date, '%Y-%m-%d (%H시)' ) AS '시험 날짜' ,
+		SUM(case when an.a_s_answer = pr.p_answ then 1
+		 		ELSE 0 
+			END) AS '정답 갯수', 
+			COUNT(pr.p_no) AS '총 문제 갯수'
+FROM answer_student AS an 			
+INNER JOIN student_user AS st 
+ON (an.s_no = st.s_no)
+INNER JOIN problem AS pr
+ON (an.p_no = pr.p_no)
+WHERE an.s_no = 1;  
+
+</select>
+
+
 
 
 

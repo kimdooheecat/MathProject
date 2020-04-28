@@ -5,6 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="/resources/css/grade.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/resources/js/grade.js"></script>
 </head>
 <body>
 <!-- tntntn -->
@@ -29,7 +31,8 @@
 					<li>
 						<ul>
 							<li>1</li>
-							<li class="left"><a class = "a" href = "/report2" >다항식의 연산</a></li>
+<!-- 							<li class="left"><a class = "a" href = "/report2" >다항식의 연산</a></li> -->
+							<li class="left" id = "geade">다항식의 연산</li>
 							<li><a class = "a" href = "/report2" >2020.04.09</a></li>
 							<li><a class = "a" href = "/report2" >10/10</a></li>
 <!-- 							<li>0</li> -->

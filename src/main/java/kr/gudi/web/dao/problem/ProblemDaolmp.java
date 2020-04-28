@@ -7,6 +7,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import kr.gudi.web.bean.StudentanswerBean;
+
 @Repository
 public class ProblemDaolmp implements ProblemDao {
 	
@@ -28,12 +30,16 @@ public class ProblemDaolmp implements ProblemDao {
 		return imageList;
 	}
 
+//	@Override
+//	public Map<String, Object> problemanswer(Map<String, Object> paramanswer) {
+//		Map<String, Object> resultanswer = session.selectOne("problem.answer", paramanswer);
+//		return null;
+//	}
+	
 	@Override
-	public Map<String, Object> problemanswer(Map<String, Object> paramanswer) {
-		Map<String, Object> resultanswer = session.selectOne("problem.answer", paramanswer);
-		return null;
+	public int studentanswer(StudentanswerBean sab) {
+		return session.insert("problem.studentanswer" , sab);
 	}
-	
-	
+
 
 }

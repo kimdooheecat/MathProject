@@ -87,6 +87,34 @@ $(document).ready(function(){
 		location.href = "/problem";
 	});
 	
+	// 제출 버튼 이벤트 
+	$("#btn4").click(function(){
+		var data = localStorage.getItem('problem');
+		console.log(data);
+		
+		var params = getParam();
+		console.log(params);
+		
+		params.data = data;		
+		console.log(params);
+		
+		$.ajax({
+			type: "POST",
+			url: "/problemanswer",
+			data: params
+		}).done(function(d) {
+			console.log(d);
+			
+			if(d == 1) {
+				problemRemove();
+				location.href = "/grade";
+			} else {
+				// 오류
+			}
+		});
+		
+	});
+	
 	var btnEvent = function(num, target, end) {
 		$(".section > div").addClass("disNone");
 		$(".section > div").eq(num).removeClass("disNone");
@@ -151,7 +179,7 @@ $(document).ready(function(){
 		var count = 0;
 		for(var index in data) {
 			var v = data[index];
-			console.log(v);
+//			console.log(v);
 			if(v > 0) {
 				count++;
 				$("input[name=radio" + (Number(index) + 1) + "]").eq(v - 1).prop('checked', true); 
@@ -168,11 +196,10 @@ $(document).ready(function(){
 		}
 	}
 	
-	
-	
-	
-	
-	
+	var answer = {
+			
+			
+	}  
 	
 	
 	
