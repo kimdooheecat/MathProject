@@ -28,58 +28,60 @@
 						</ul>
 					</li>
 					<!-- 게시물이 출력될 영역 -->
-					<li>
-						<ul>
-							<li>1</li>
+<!-- 				<div class = "grdaelist"> -->
+					<li class = "grdaelist" >
+					
+<!-- 						<ul> -->
+<!-- 							<li>1</li> -->
 <!-- 							<li class="left"><a class = "a" href = "/report2" >다항식의 연산</a></li> -->
-							<li class="left" id = "geade">다항식의 연산</li>
-							<li><a class = "a" href = "/report2" >2020.04.09</a></li>
-							<li><a class = "a" href = "/report2" >10/10</a></li>
+<!-- 							<li class="left" id = "geade">다항식의 연산</li> -->
+<!-- 							<li><a class = "a" href = "/report2" >2020.04.09</a></li> -->
+<!-- 							<li><a class = "a" href = "/report2" >10/10</a></li> -->
 <!-- 							<li>0</li> -->
 						</ul>
-					</li>
 
-					<li>
-						<ul>
-							<li>2</li>
-							<li class="left">복소수와 이차방정식</li>
-							<li>2020.04.01</li>
-							<li>8/10</li>
-<!-- 							<li>0</li> -->
-						</ul>
 					</li>
+<!-- 				</div>	 -->
 
-					<li>
-						<ul>
-							<li>3</li>
-							<li class="left">도형의 이동</li>
-							<li>2020.03.20</li>
-							<li>8/10</li>
-<!-- 							<li>0</li> -->
-						</ul>
-					</li>
+<!-- 					<li> -->
+<!-- 						<ul> -->
+<!-- 							<li>2</li> -->
+<!-- 							<li class="left">복소수와 이차방정식</li> -->
+<!-- 							<li>2020.04.01</li> -->
+<!-- 							<li>8/10</li> -->
 
-					<li>
-						<ul>
-							<li>4</li>
-							<li class="left">여러가지 방정식와 부등식</li>
-							<li>2020.03.11</li>
-							<li>5/10</li>
-<!-- 							<li>0</li> -->
-						</ul>
-					</li>
-					<li>
-					<ul>
-						<li>5</li>
-						<li class="left">여러가지 방정식와 부등식</li>
-						<li>2020.03.11</li>
-						<li>5/10</li>
-<!-- 							<li>0</li> -->
-						</ul>
-					</li>
+<!-- 						</ul> -->
+<!-- 					</li> -->
+
+<!-- 					<li> -->
+<!-- 						<ul> -->
+<!-- 							<li>3</li> -->
+<!-- 							<li class="left">도형의 이동</li> -->
+<!-- 							<li>2020.03.20</li> -->
+<!-- 							<li>8/10</li> -->
+
+<!-- 						</ul> -->
+<!-- 					</li> -->
+
+<!-- 					<li> -->
+<!-- 						<ul> -->
+<!-- 							<li>4</li> -->
+<!-- 							<li class="left">여러가지 방정식와 부등식</li> -->
+<!-- 							<li>2020.03.11</li> -->
+<!-- 							<li>5/10</li> -->
+<!-- 						</ul> -->
+<!-- 					</li> -->
+<!-- 					<li> -->
+<!-- 					<ul> -->
+<!-- 						<li>5</li> -->
+<!-- 						<li class="left">여러가지 방정식와 부등식</li> -->
+<!-- 						<li>2020.03.11</li> -->
+<!-- 						<li>5/10</li> -->
+<!-- 						</ul> -->
+<!-- 					</li> -->
 				
-				</ul>
-			</li>
+<!-- 				</ul> -->
+<!-- 			</li> -->
 
 			<!-- 게시판 페이징 영역 -->
 			<li>

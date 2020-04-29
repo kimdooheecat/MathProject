@@ -18,7 +18,7 @@ public class GradeController {
 	
 	@Autowired private GradeService gradeservice;
 	
-	@RequestMapping(value = "/grdaelist" , method=RequestMethod.POST)
+	@RequestMapping(value = "/gradeList" , method=RequestMethod.POST)
 	public @ResponseBody List<Map<String, Object>> grdaelist(@RequestParam("ty_no") String ty_no) {
 		System.out.println(ty_no);
 		Map<String, Object> params = new HashMap<String, Object>();

@@ -195,12 +195,7 @@ $(document).ready(function(){
 			radioEvent(i);
 		}
 	}
-	
-	var answer = {
-			
-			
-	}  
-	
+
 	
 	
 });
